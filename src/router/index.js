@@ -6,6 +6,7 @@ const Category = () => import('../views/category/Category.vue')
 const Cart = () => import('../views/cart/Cart.vue')
 const Profile = () => import('../views/profile/Profile.vue')
 
+ import login from '../views/login/index.vue'
 // 1.安装插件
 
 Vue.use(VueRouter)
@@ -28,6 +29,11 @@ const routes = [
     path: '/cart',
     component: Cart
   },
+  {
+    path: '/login',
+    component: login
+  }
+  ,
   {
     path: '/profile',
     component: Profile

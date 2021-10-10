@@ -1,8 +1,9 @@
 import { request } from './request'
 
-export function getHomeMultidata () {
+export function getHomeMultidata (data) {
   return request({
-    url: '/home/multidata'
+    url: '/home/multidata',
+    data:data
   })
 }
 
